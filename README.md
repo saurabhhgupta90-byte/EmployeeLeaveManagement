@@ -1,58 +1,150 @@
-# Salesforce DX Project
+# Employee Leave Management System
 
-Salesforce DX is a development approach that brings source-driven development, team collaboration, and continuous integration to the Salesforce Platform. Instead of working directly in an org through a web browser, you work with metadata as source files in a local DX project, track changes in version control, and deploy through automated processes.
+## Project Overview
 
-This project template gets you started with the tools and structure you need to build Salesforce applications using source control, scratch orgs, and the Salesforce CLI.
+The Employee Leave Management System is an enterprise-grade Salesforce application designed to automate the complete employee leave lifecycle. The solution streamlines leave requests, approval workflows, leave balance management, notifications, and reporting while reducing manual effort and improving operational efficiency.
 
-## Prerequisites
+---
 
-Before you start, make sure you have:
+## Business Problem
 
-- **Salesforce CLI** - Download from [developer.salesforce.com/tools/salesforcecli](https://developer.salesforce.com/tools/salesforcecli). See [Install Salesforce CLI](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm) for details.
-- **VS Code with Salesforce Extension Pack** - See [Installation Instructions](https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/install.html) for details. Includes the Agentforce Vibes extension.
-- **A development org** - Sign up for a free Developer Edition org [here](https://developer.salesforce.com/signup).
-- **Dev Hub enabled** (optional, required to create scratch orgs) - You can enable Dev Hub in your development org under Setup > Dev Hub.  See [Provide Developers Access to Salesforce DX Tools](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_setup_dx_tools.htm).
+Organizations often manage employee leave requests using spreadsheets and manual approvals, leading to delays, inaccurate leave balances, and lack of visibility.
 
-## Project Structure
+This solution digitizes the entire leave management process by providing automated workflows, approval processes, and centralized reporting within Salesforce.
 
-Your DX project follows this structure:
+---
 
-- **`force-app/main/default/`** - Your metadata source files live in this default package directory. You can configure additional package directories in the `sfdx-project.json` file.
-- **`config/`** - Scratch org definitions and project settings
-- **`scripts/`** - Automation scripts for common tasks
-- **`sfdx-project.json`** - Project manifest that defines package directories, namespace, API version, and other project-level settings
+## Solution
 
-See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm).
+Designed and developed a scalable Salesforce solution to automate employee leave management using declarative automation and Apex.
 
-## Get Started
+The application enables employees to submit leave requests, managers to review and approve requests, HR teams to monitor leave balances, and administrators to generate reports for workforce planning.
 
-Ready to start developing? The [Get Started with Salesforce DX](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_get_started_dx.htm) guide walks you through your first project, from creating a scratch org to creating a simple Apex class or LWC to deploying your code to a sandbox.
+---
 
-## Common Salesforce CLI Commands
+## Key Features
 
-Here are common CLI commands that you'll use the most:
+- Employee Leave Request Management
+- Multi-Level Leave Approval Process
+- Leave Balance Management
+- Record-Triggered Flow Automation
+- Email Notifications
+- Validation Rules
+- Approval Process
+- Custom Objects & Relationships
+- Apex Classes
+- Apex Triggers
+- Lightning Web Components (LWC)
+- Reports & Dashboards
+- Role-Based Security
+- Permission Sets
+- Formula Fields
+- Custom Tabs
+- List Views
+- SOQL Queries
+- Test Classes
 
-- `sf org login web`: Authorize an org
-- `sf org open`: Open your org in a browser
-- `sf org create scratch`: Create a scratch org
-- `sf project deploy start`: Deploy metadata to your org
-- `sf project retrieve start`: Retrieve metadata from your org
-- `sf template generate <artifact>`: Scaffold new components, such as Apex classes and triggers, LWC components, Lightning apps, and more
-- `sf apex <command>`: Run Apex tests, run anonymous Apex blocks, and view logs
-- `sf data <command>`: Work with test data
-- `sf alias <command>`: Manage org aliases
-- `sf config <command>`: Configure CLI settings
+---
 
-## Use Agentforce Vibes to Build Lightning Apps
+## Salesforce Technologies
 
-Transform your ideas into custom Lightning apps that extend CRM workflows directly in Lightning Experience. Through natural conversations with Agentforce Vibes, implement custom objects and fields, complex business logic, and dynamic UI components. See [Build a Lightning App Using Agentforce Vibes](https://developer.salesforce.com/docs/platform/einstein-for-devs/guide/lexapp-overview.html).
+- Salesforce Platform
+- Apex
+- Lightning Web Components (LWC)
+- SOQL
+- Salesforce Flow
+- Approval Process
+- Validation Rules
+- Reports & Dashboards
+- Permission Sets
+- Profiles
+- Visual Studio Code
+- Salesforce CLI
+- Git & GitHub
 
-## Additional Resources
+---
 
-- [Agentforce Vibes Developer Guide](https://developer.salesforce.com/docs/platform/einstein-for-devs/guide/einstein-overview.html)
-- [Salesforce CLI Installation Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/)
-- [Salesforce CLI Plugin Development Guide](https://developer.salesforce.com/docs/platform/salesforce-cli-plugin/guide/conceptual-overview.html)
-- [Salesforce VS Code Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+## Functional Modules
 
+### Employee Management
+- Employee Profile
+- Department Information
+- Manager Assignment
+
+### Leave Management
+- Apply Leave
+- Edit Leave
+- Cancel Leave
+- Leave History
+
+### Approval Management
+- Manager Approval
+- HR Approval
+- Automatic Status Updates
+
+### Reporting
+- Department-wise Leave Report
+- Monthly Leave Summary
+- Employee Leave Dashboard
+
+---
+
+## Business Workflow
+
+1. Employee submits a leave request.
+2. Validation rules verify mandatory information.
+3. Manager reviews the request.
+4. HR processes approved requests.
+5. Leave balance is updated automatically.
+6. Employees receive status notifications.
+7. Reports and dashboards are refreshed.
+
+---
+
+## Security
+
+- Profiles
+- Permission Sets
+- Field-Level Security
+- Record-Level Security
+- Validation Rules
+
+---
+
+## Benefits
+
+- Reduced manual effort
+- Faster approval process
+- Improved data accuracy
+- Increased operational efficiency
+- Better employee experience
+- Centralized reporting
+- Secure data management
+
+---
+
+## Repository Structure
+
+```
+force-app/
+manifest/
+classes/
+flows/
+objects/
+layouts/
+permissionsets/
+reports/
+dashboards/
+lwc/
+```
+
+---
+
+## Developer
+
+**Saurabh Kumar**
+
+Salesforce Developer
+
+GitHub:
+https://github.com/saurabhhgupta90-byte
